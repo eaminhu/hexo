@@ -1,0 +1,4 @@
+* { margin: 0; padding: 0;}
+#dowebok { width: 700px; margin: 0 auto; font-size: 0;padding-bottom: 200px;}
+#dowebok li { display: inline-block; width: 30%; margin-left: 3%; padding-top: 3%;float: left;height: 180px;overflow: hidden;}
+#dowebok li img { width: 100%;}

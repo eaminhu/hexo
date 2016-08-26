@@ -86,7 +86,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Eamin's Blog">
-<meta property="og:url" content="https://eaminhu.github.io/index.html">
+<meta property="og:url" content="https://eaminhu.github.io/categories/编程/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Eamin's Blog">
@@ -110,9 +110,9 @@
 
 
 
-  <link rel="canonical" href="https://eaminhu.github.io/"/>
+  <link rel="canonical" href="https://eaminhu.github.io/categories/编程/"/>
 
-  <title> Eamin's Blog </title>
+  <title> 分类: 编程 | Eamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -143,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,250 +240,68 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        编程
+        <small>分类</small>
+      </h2>
+    </div>
+
     
       
 
-  
-  
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/08/23/faq/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2016/08/23/faq/" itemprop="url">
-                  部署Hexo遇到的问题
-                </a>
+                <span itemprop="name">部署Hexo遇到的问题</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-23T20:22:07+08:00" content="2016-08-23">
-              2016-08-23
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-08-23T20:22:07+08:00"
+              content="2016-08-23" >
+          08-23
+        </time>
+      </div>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/23/faq/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/23/faq/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="常见问题FAQ"><a href="#常见问题FAQ" class="headerlink" title="常见问题FAQ"></a>常见问题FAQ</h1><h2 id="部署hexo时，域名配置文件CNAME被删除"><a href="#部署hexo时，域名配置文件CNAME被删除" class="headerlink" title="部署hexo时，域名配置文件CNAME被删除"></a>部署hexo时，域名配置文件CNAME被删除</h2><p>之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，<br>会把CNAME文件删除，改放到source下即可</p>
-<h2 id="使用-hexo-g-生成文件时报错"><a href="#使用-hexo-g-生成文件时报错" class="headerlink" title="使用$ hexo g 生成文件时报错"></a>使用$ hexo g 生成文件时报错</h2><p><img src="/images/error.png" alt=""><br>原因是配置冒号后面没有空格，language: zh-Hans，这个问题在第一次弄的时候很容易出错！</p>
-<p>##修改主题不起作用，而且hexo generate还报错<br>解决办法：<br>需要到相应的主题文件夹下面进行修改，比如我的主题为：themes\jacman 则在根目录下找到该文件夹下，修改_config.yml文件，根目录下面也有个同样的名字，不注意，容易弄混，要主要修改的文件是否正确。</p>
-<p>##tags页面没有生成标签<br>在新建页面后，头部配置tags就能自动生成标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: hexo部署后，CNAME会被自动删除</div><div class="line">date: 2016-08-23 20:22:07</div><div class="line">tags: hexo </div><div class="line">categories: 编程</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
     
       
 
-  
-  
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/08/23/hello-world/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2016/08/23/hello-world/" itemprop="url">
-                  Backbone.js
-                </a>
+                <span itemprop="name">Backbone.js</span>
               
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-23T14:12:23+08:00" content="2016-08-23">
-              2016-08-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/23/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/23/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>Backbone.js是什么？<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/23/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
             </a>
-          </div>
         
-      
-    </div>
+      </h1>
 
-    <div>
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-08-23T14:12:23+08:00"
+              content="2016-08-23" >
+          08-23
+        </time>
+      </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
@@ -493,6 +309,7 @@
   </section>
 
   
+
 
 
           </div>
