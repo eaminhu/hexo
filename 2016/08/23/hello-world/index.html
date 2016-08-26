@@ -84,19 +84,25 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="经过几天反复的折腾，blog终于搭建起来了，
+空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
+博客的东西也是很少，显得很空洞。坚持更新吧~
+2016-8-26">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Backbone.js">
+<meta property="og:title" content="啊啊啊啊啊啊终于好了">
 <meta property="og:url" content="https://eaminhu.github.io/2016/08/23/hello-world/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-08-26T06:24:56.522Z">
+<meta property="og:description" content="经过几天反复的折腾，blog终于搭建起来了，
+空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
+博客的东西也是很少，显得很空洞。坚持更新吧~
+2016-8-26">
+<meta property="og:updated_time" content="2016-08-26T10:00:50.006Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Backbone.js">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="啊啊啊啊啊啊终于好了">
+<meta name="twitter:description" content="经过几天反复的折腾，blog终于搭建起来了，
+空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
+博客的东西也是很少，显得很空洞。坚持更新吧~
+2016-8-26">
 
 
 
@@ -119,7 +125,7 @@ Quick">
 
   <link rel="canonical" href="https://eaminhu.github.io/2016/08/23/hello-world/"/>
 
-  <title> Backbone.js | Eamin's Blog </title>
+  <title> 啊啊啊啊啊啊终于好了 | Eamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -269,7 +275,7 @@ Quick">
             
             
               
-                Backbone.js
+                啊啊啊啊啊啊终于好了
               
             
           </h1>
@@ -295,8 +301,8 @@ Quick">
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
                   </a>
                 </span>
 
@@ -335,11 +341,10 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>Backbone.js是什么？<br><a id="more"></a><br>Backbone.js是一个JavaScript MVC框架，提供了良好的代码组织能力，可以方便地将应用程序解耦成可以复用的部分，为建立大型的单页面应用提供框架支持，目前的版本是0.9.10（注：现在已到1.2.1版本）。通过将应用程序分解成MVC模式中不同职责的模块，带来了以下几点好处。</p>
-<p>降低维护成本。数据、控制器、视图的更新都是独立进行的，互相之间都是松散耦合的。<br>解耦数据和视图，便于直接对业务逻辑进行单元测试。</p>
-<p>便于团队合作，负责UI开发和业务逻辑开发的工程师可以分工并行工作。对于Web前端开发来讲，负责HTML模板和CSS的界面工程师和负责业务逻辑的JavaScript工程师可以协同工作。<br>Backbone.js算是比较轻量的MVC框架，所谓轻量，是说它只关注一个框架应该关注的最基本的事情——如何给应用分层、如何组织各种功能的代码。至于在实际开发中需要用到的Utils或UI组件，Backbone.js则没有提供任何支持。但Backbone.js所依赖的Underscore.js是一个功能比较全面的非侵入式工具函数类库，算是在Utils方面的一个补充。</p>
-<p>轻量并不意味着功能薄弱。首先，Backbone.js的精髓是它定义前端MVC的方式和编码哲学，并依据这些规定了如何去给代码分层，因此Backbone.js能够让前端工程在可维护性和扩展性上都得到质的提升；同时，由于其良好且易于理解的结构，各个模块之间都是松散耦合的，虽然目前官方并没有提供根据实际需求build文件的功能，但如果你愿意，完全可以自己手工删掉源码中的Bakcbone.View只使用Model和Collection；最后，Backbone.js的任何一个部分都是非常容易扩展的。因此，Backbone.js的功能实际上非常强大的。下面将介绍Backbone.js的主要组件（架构如图1所示）</p>
+        <p>经过几天反复的折腾，blog终于搭建起来了，</p>
+<p>空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding</p>
+<p>博客的东西也是很少，显得很空洞。<br><br><br>坚持更新吧~</p>
+<p>2016-8-26<br><br></p>
 
       
     </div>
@@ -369,8 +374,8 @@ Quick">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/23/faq/" rel="prev" title="部署Hexo遇到的问题">
-                部署Hexo遇到的问题 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/08/23/faq/" rel="prev" title="部署hexo时遇到的问题">
+                部署hexo时遇到的问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -421,7 +426,7 @@ Quick">
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/08/23/hello-world/"
-           data-title="Backbone.js" data-url="https://eaminhu.github.io/2016/08/23/hello-world/">
+           data-title="啊啊啊啊啊啊终于好了" data-url="https://eaminhu.github.io/2016/08/23/hello-world/">
       </div>
     
   </div>
@@ -478,7 +483,7 @@ Quick">
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -552,7 +557,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
