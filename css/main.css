@@ -828,6 +828,9 @@ pre .javascript .function {
 .comments {
   margin: 60px 20px 0;
 }
+#ds-recent-visitors .ds-avatar {
+  float: left;
+}
 .tag-cloud {
   text-align: center;
 }
@@ -1548,7 +1551,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7acffe;
+  background: #f17994;
 }
 .links-of-blogroll {
   font-size: 13px;
