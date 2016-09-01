@@ -1407,6 +1407,16 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-more-link .btn {
+  color: #555;
+  border: solid 1px #555;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+.post-more-link .btn:hover {
+  background-color: #555;
+  color: #fff;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1564,7 +1574,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7549ff;
+  background: #03cfaf;
 }
 .links-of-blogroll {
   font-size: 13px;

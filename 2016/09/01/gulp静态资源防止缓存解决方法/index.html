@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="gulp," />
 
 
 
@@ -84,25 +84,19 @@
 
 
 
-<meta name="description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
+<meta name="description" content="每次修改了文件，客户端缓存css,js我们需要在引用的路径上加上添加版本号或者使用md5命名文件再修改html里的引用。   那么使用gulp-rev-collector是一个不错的选择工具，配置简单。
+一、定义插件123456var gulp = require(&amp;apos;gulp&amp;apos;), //本地安装gulp所用到的地方    less = require(&amp;apos;gulp-l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纪念一下这个时刻，博客终于好了">
-<meta property="og:url" content="https://eaminhu.github.io/2016/08/23/hello-world/index.html">
+<meta property="og:title" content="gulp静态资源防止缓存解决方法">
+<meta property="og:url" content="https://eaminhu.github.io/2016/09/01/gulp静态资源防止缓存解决方法/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
-<meta property="og:description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
-<meta property="og:updated_time" content="2016-09-01T12:55:14.367Z">
+<meta property="og:description" content="每次修改了文件，客户端缓存css,js我们需要在引用的路径上加上添加版本号或者使用md5命名文件再修改html里的引用。   那么使用gulp-rev-collector是一个不错的选择工具，配置简单。
+一、定义插件123456var gulp = require(&amp;apos;gulp&amp;apos;), //本地安装gulp所用到的地方    less = require(&amp;apos;gulp-l">
+<meta property="og:updated_time" content="2016-09-01T12:53:51.444Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="纪念一下这个时刻，博客终于好了">
-<meta name="twitter:description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
+<meta name="twitter:title" content="gulp静态资源防止缓存解决方法">
+<meta name="twitter:description" content="每次修改了文件，客户端缓存css,js我们需要在引用的路径上加上添加版本号或者使用md5命名文件再修改html里的引用。   那么使用gulp-rev-collector是一个不错的选择工具，配置简单。
+一、定义插件123456var gulp = require(&amp;apos;gulp&amp;apos;), //本地安装gulp所用到的地方    less = require(&amp;apos;gulp-l">
 
 
 
@@ -123,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="https://eaminhu.github.io/2016/08/23/hello-world/"/>
+  <link rel="canonical" href="https://eaminhu.github.io/2016/09/01/gulp静态资源防止缓存解决方法/"/>
 
-  <title> 纪念一下这个时刻，博客终于好了 | Eamin's Blog </title>
+  <title> gulp静态资源防止缓存解决方法 | Eamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +269,7 @@
             
             
               
-                纪念一下这个时刻，博客终于好了
+                gulp静态资源防止缓存解决方法
               
             
           </h1>
@@ -287,8 +281,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-23T14:12:23+08:00" content="2016-08-23">
-              2016-08-23
+            <time itemprop="dateCreated" datetime="2016-09-01T20:09:02+08:00" content="2016-09-01">
+              2016-09-01
             </time>
           </span>
 
@@ -301,8 +295,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -317,8 +311,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/23/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/23/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/09/01/gulp静态资源防止缓存解决方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/01/gulp静态资源防止缓存解决方法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -341,10 +335,21 @@
       
 
       
-        <p>经过几天反复的折腾，blog终于搭建起来了，</p>
-<p>空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding</p>
-<p>博客的东西也是很少，显得很空洞。<br><br><br>坚持更新吧~</p>
-<p>2016-8-26<br><br></p>
+        <p>　每次修改了文件，客户端缓存css,js我们需要在引用的路径上加上添加版本号或者使用md5命名文件再修改html里的引用。<br>   那么使用gulp-rev-collector是一个不错的选择工具，配置简单。</p>
+<h3 id="一、定义插件"><a href="#一、定义插件" class="headerlink" title="一、定义插件"></a>一、定义插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var gulp = require(&apos;gulp&apos;), //本地安装gulp所用到的地方</div><div class="line">    less = require(&apos;gulp-less&apos;); //编译less</div><div class="line">    cleanCSS = require(&apos;gulp-clean-css&apos;); //压缩css</div><div class="line">    rev = require(&apos;gulp-rev&apos;);	//给文件加入版本号</div><div class="line">    revCollector = require(&apos;gulp-rev-collector&apos;);  //替换html中的文件名</div><div class="line">    clean = require(&apos;gulp-clean&apos;); //清空文件夹，避免文件冗余</div></pre></td></tr></table></figure>
+<p>　　<a id="more"></a></p>
+<p>　　require完之后，我们就可以开始编写一个简单实用的版本控制的自动化工具了。</p>
+<h3 id="二、清空文件夹（这一步看具体的需求）"><a href="#二、清空文件夹（这一步看具体的需求）" class="headerlink" title="二、清空文件夹（这一步看具体的需求）"></a>二、清空文件夹（这一步看具体的需求）</h3><p>　　我们一步一步来，我们需要产出一个静态资源路径，我们首先要清空里面曾经的资源，防止有冗余。那我们就定义了一个clean任务，然后将src需要清理的文件夹引入，<br>然后执行clean。src的第二个参数的{read:false}，是不读取文件加快程序。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/*清空文件夹*/</div><div class="line">gulp.task(&apos;clean&apos;,function()&#123;</div><div class="line">	return gulp.src([&apos;dist&apos;,&apos;json&apos;],&#123;read: false&#125;)</div><div class="line">		.pipe(clean());</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>　　　　</p>
+<h3 id="三、定义任务-文件加入版本号"><a href="#三、定义任务-文件加入版本号" class="headerlink" title="三、定义任务-文件加入版本号"></a>三、定义任务-文件加入版本号</h3><p>　　清理完之后，就可以对静态资源进行优化处理。那我们定义ver任务，<br>我们来仔细看看下面的程序，首先任务名是css，然后src引入css文件，执行rev指令，给文件加入版本号，然后dest输出到dist/css文件夹</p>
+<p>最后再用rev.manifest，将对应的版本号和原始文件用json表示出来，保存到json文件夹</p>
+<p>　　<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*add dev*/</div><div class="line">gulp.task(&apos;ver&apos;,function()&#123;</div><div class="line">	return gulp.src([&apos;css/*.css&apos;])</div><div class="line">		.pipe(rev())  //文件加入版本号</div><div class="line">		.pipe(gulp.dest(&apos;dist/css&apos;))</div><div class="line">		.pipe(rev.manifest())  //对应的版本号和原始文件用json表示出来</div><div class="line">		.pipe(gulp.dest(&apos;json&apos;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>　　</p>
+<h3 id="四、定义任务-替换引用路径"><a href="#四、定义任务-替换引用路径" class="headerlink" title="四、定义任务-替换引用路径"></a>四、定义任务-替换引用路径</h3><p>　　接着便是最后一步，改变html引用路径，这里我们将这个任务命名为dev。记得dev任务要在生成mainfest之后进行，可以用gulp[]任务依赖来进行流程控制。</p>
+<p>　　<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">gulp.task(&apos;dev&apos;,function()&#123;</div><div class="line">	return gulp.src([&apos;json/rev-manifest.json&apos;,&apos;/index.html&apos;])</div><div class="line">		.pipe(revCollector(&#123;</div><div class="line">			 replaceReved: true</div><div class="line">		&#125;))</div><div class="line">		.pipe(gulp.dest(&apos;dist/html&apos;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="五、执行任务"><a href="#五、执行任务" class="headerlink" title="五、执行任务"></a>五、执行任务</h3><p>　　最后一步执行命令，最开始因为把dev放在ver后面，导致一直没有替换html中的内容。这样放在回调后面就可以了。</p>
+<p>　　<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gulp.task(&apos;default&apos;,[&apos;minify-css&apos;,&apos;ver&apos;],function()&#123;</div><div class="line">	gulp.run(&apos;dev&apos;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>　　</p>
 
       
     </div>
@@ -365,18 +370,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/gulp/" rel="tag">#gulp</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/29/20160829/" rel="next" title="秋意浓">
+                <i class="fa fa-chevron-left"></i> 秋意浓
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/23/faq/" rel="prev" title="部署hexo时遇到的问题">
-                部署hexo时遇到的问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -425,8 +436,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/23/hello-world/"
-           data-title="纪念一下这个时刻，博客终于好了" data-url="https://eaminhu.github.io/2016/08/23/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/09/01/gulp静态资源防止缓存解决方法/"
+           data-title="gulp静态资源防止缓存解决方法" data-url="https://eaminhu.github.io/2016/09/01/gulp静态资源防止缓存解决方法/">
       </div>
     
   </div>
@@ -568,7 +579,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、定义插件"><span class="nav-number">1.</span> <span class="nav-text">一、定义插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、清空文件夹（这一步看具体的需求）"><span class="nav-number">2.</span> <span class="nav-text">二、清空文件夹（这一步看具体的需求）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、定义任务-文件加入版本号"><span class="nav-number">3.</span> <span class="nav-text">三、定义任务-文件加入版本号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、定义任务-替换引用路径"><span class="nav-number">4.</span> <span class="nav-text">四、定义任务-替换引用路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、执行任务"><span class="nav-number">5.</span> <span class="nav-text">五、执行任务</span></a></li></ol></div>
             
           </div>
         </section>
