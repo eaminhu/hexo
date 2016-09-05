@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="模块化," />
 
 
 
@@ -84,25 +84,19 @@
 
 
 
-<meta name="description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
+<meta name="description" content="概要：   AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。   CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。
+AMD 与 RequireJSAsynchronous Module Definition，用白话文讲就是 异步模块定义，对于 JSer 来说，异步是再也熟悉不过的词了，所有的模块将被异步加载，模块加载不影响后面语句运行。所有依赖某些模块的语句均放置在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纪念一下这个时刻，博客终于好了">
-<meta property="og:url" content="https://eaminhu.github.io/2016/08/23/hello-world/index.html">
+<meta property="og:title" content="JavaSript模块规范 - AMD规范与CMD规范介绍">
+<meta property="og:url" content="https://eaminhu.github.io/2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
-<meta property="og:description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
-<meta property="og:updated_time" content="2016-09-01T12:55:14.367Z">
+<meta property="og:description" content="概要：   AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。   CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。
+AMD 与 RequireJSAsynchronous Module Definition，用白话文讲就是 异步模块定义，对于 JSer 来说，异步是再也熟悉不过的词了，所有的模块将被异步加载，模块加载不影响后面语句运行。所有依赖某些模块的语句均放置在">
+<meta property="og:updated_time" content="2016-09-05T09:51:45.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="纪念一下这个时刻，博客终于好了">
-<meta name="twitter:description" content="经过几天反复的折腾，blog终于搭建起来了，
-空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding
-博客的东西也是很少，显得很空洞。坚持更新吧~
-2016-8-26">
+<meta name="twitter:title" content="JavaSript模块规范 - AMD规范与CMD规范介绍">
+<meta name="twitter:description" content="概要：   AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。   CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。
+AMD 与 RequireJSAsynchronous Module Definition，用白话文讲就是 异步模块定义，对于 JSer 来说，异步是再也熟悉不过的词了，所有的模块将被异步加载，模块加载不影响后面语句运行。所有依赖某些模块的语句均放置在">
 
 
 
@@ -123,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="https://eaminhu.github.io/2016/08/23/hello-world/"/>
+  <link rel="canonical" href="https://eaminhu.github.io/2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/"/>
 
-  <title> 纪念一下这个时刻，博客终于好了 | Eamin's Blog </title>
+  <title> JavaSript模块规范 - AMD规范与CMD规范介绍 | Eamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +269,7 @@
             
             
               
-                纪念一下这个时刻，博客终于好了
+                JavaSript模块规范 - AMD规范与CMD规范介绍
               
             
           </h1>
@@ -287,8 +281,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-23T14:12:23+08:00" content="2016-08-23">
-              2016-08-23
+            <time itemprop="dateCreated" datetime="2016-09-05T17:00:55+08:00" content="2016-09-05">
+              2016-09-05
             </time>
           </span>
 
@@ -301,8 +295,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -317,8 +311,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/23/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/23/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -341,10 +335,47 @@
       
 
       
-        <p>经过几天反复的折腾，blog终于搭建起来了，</p>
-<p>空置了两年的域名也绑定好了,唯一的缺点是gitpages是美国空间。访问速度略慢，下一步的打算移植到coding</p>
-<p>博客的东西也是很少，显得很空洞。<br><br><br>坚持更新吧~</p>
-<p>2016-8-26<br><br></p>
+        <h3 id="概要："><a href="#概要：" class="headerlink" title="概要："></a>概要：</h3><p>   AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>   CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。</p>
+<h3 id="AMD-与-RequireJS"><a href="#AMD-与-RequireJS" class="headerlink" title="AMD 与 RequireJS"></a>AMD 与 RequireJS</h3><p>Asynchronous Module Definition，用白话文讲就是 异步模块定义，对于 JSer 来说，异步是再也熟悉不过的词了，所有的模块将被异步加载，模块加载不影响后面语句运行。所有依赖某些模块的语句均放置在回调函数中。</p>
+<p>AMD规范定义了一个自由变量或者说是全局变量 define 的函数。</p>
+<a id="more"></a>
+<p>define( id?, dependencies?, factory );<br>//AMD规范  <a href="https://github.com/amdjs/amdjs-api/wiki/AMD" target="_blank" rel="external">https://github.com/amdjs/amdjs-api/wiki/AMD</a></p>
+<p>   第一个参数 id 为字符串类型，表示了模块标识，为可选参数。若不存在则模块标识应该默认定义为在加载器中被请求脚本的标识。如果存在，那么模块标识必须为顶层的或者一个绝对的标识。</p>
+<p>   第二个参数，dependencies ，是一个当前模块依赖的，已被模块定义的模块标识的数组字面量。</p>
+<p>   第三个参数，factory，是一个需要进行实例化的函数或者一个对象。</p>
+<p> 一个返回对象字面量的异步模块</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">define([&quot;alpha&quot;], function( alpha )&#123;</div><div class="line">    return &#123;</div><div class="line">        verb : function()&#123;</div><div class="line">            return alpha.verb() + 1 ;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</code></pre><p>require方法调用模块</p>
+<p>   在require进行调用模块时，其参数与define类似。</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">require( [&apos;foo&apos;, &apos;bar&apos;], function( foo, bar )&#123;</div><div class="line">    foo.func();</div><div class="line">    bar.func();</div><div class="line">&#125; );</div></pre></td></tr></table></figure>
+</code></pre><h3 id="CMD-与-seaJS"><a href="#CMD-与-seaJS" class="headerlink" title="CMD 与 seaJS"></a>CMD 与 seaJS</h3><pre><code>在CMD中，一个模块就是一个文件，格式为：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define( factory );</div></pre></td></tr></table></figure>
+</code></pre><p>全局函数define，用来定义模块。<br>参数 factory  可以是一个函数，也可以为对象或者字符串。<br>当 factory 为对象、字符串时，表示模块的接口就是该对象、字符串。</p>
+<p>define( id?, deps?, factory );<br>define也可以接受两个以上的参数，字符串id为模块标识，数组deps为模块依赖：</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define( &apos;module&apos;, [&apos;module1&apos;, &apos;module2&apos;], function( require, exports, module )&#123;</div><div class="line">    // 模块代码</div><div class="line">&#125; );</div></pre></td></tr></table></figure>
+
+  exports 是 factory 的第二个参数，用来向外提供模块接口。
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">define(function( require, exports )&#123;</div><div class="line">    exports.foo = &apos;bar&apos;; // 向外提供的属性</div><div class="line">    exports.do = function()&#123;&#125;; // 向外提供的方法</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</code></pre><p>当然也可以使用 return 直接向外提供接口。</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">define(function( require, exports )&#123;</div><div class="line">    return&#123;</div><div class="line">        foo : &apos;bar&apos;, // 向外提供的属性</div><div class="line">        do : function()&#123;&#125; // 向外提供的方法</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</code></pre><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>AMD 与 CMD 区别到底在哪里？</p>
+<p>看了以上 AMD，requireJS 与 CMD， seaJS的简单介绍会有点感觉模糊，总感觉较为相似。因为像 requireJS 其并不是只是纯粹的AMD固有思想，其也是有CMD规范的思想，只不过是推荐 AMD规范方式而已， seaJS也是一样。</p>
+<p>下面是玉伯对于 AMD 与 CMD 区别的解释：</p>
+<p>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。<br>CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。</p>
+<p>类似的还有 CommonJS Modules/2.0 规范，是 BravoJS 在推广过程中对模块定义的规范化产出还有不少??</p>
+<p>这些规范的目的都是为了 JavaScript 的模块化开发，特别是在浏览器端的。<br>目前这些规范的实现都能达成浏览器端模块化开发的目的。</p>
+<p>区别：</p>
+<ol>
+<li>对于依赖的模块，AMD 是提前执行，CMD 是延迟执行。不过 RequireJS 从 2.0 开始，也改成可以延迟执行（根据写法不同，处理方式不同）。CMD 推崇 as lazy as possible.</li>
+<li>CMD 推崇依赖就近，AMD 推崇依赖前置。看代码：<br>虽然 AMD 也支持 CMD 的写法，同时还支持将 require 作为依赖项传递，但 RequireJS 的作者默认是最喜欢上面的写法，也是官方文档里默认的模块定义写法。</li>
+<li>AMD 的 API 默认是一个当多个用，CMD 的 API 严格区分，推崇职责单一。比如 AMD 里，require 分全局 require 和局部 require，都叫 require。CMD 里，没有全局 require，而是根据模块系统的完备性，提供 seajs.use 来实现模块系统的加载启动。CMD 里，每个 API 都简单纯粹。</li>
+<li>还有一些细节差异，具体看这个规范的定义就好，就不多说了。</li>
+</ol>
+<p>// CMD默认推荐写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">define(function(require, exports, module) &#123;</div><div class="line">    var a = require(&apos;./a&apos;)</div><div class="line">    a.doSomething()</div><div class="line">    // 此处略去 100 行</div><div class="line">    var b = require(&apos;./b&apos;) // 依赖可以就近书写</div><div class="line">    b.doSomething()</div><div class="line">    // ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>// AMD 默认推荐写法</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">define([&apos;./a&apos;, &apos;./b&apos;], function(a, b) &#123; // 依赖必须一开始就写好</div><div class="line">    a.doSomething()</div><div class="line">    // 此处略去 100 行</div><div class="line">    b.doSomething()</div><div class="line">    // ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</code></pre><p>本文转载至自： <a href="http://blog.chinaunix.net/uid-26672038-id-4112229.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-26672038-id-4112229.html</a></p>
 
       
     </div>
@@ -365,18 +396,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/模块化/" rel="tag">#模块化</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/09/01/gulp静态资源防止缓存解决方法/" rel="next" title="gulp静态资源防止缓存解决方法">
+                <i class="fa fa-chevron-left"></i> gulp静态资源防止缓存解决方法
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/23/faq/" rel="prev" title="部署hexo时遇到的问题">
-                部署hexo时遇到的问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -425,8 +462,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/23/hello-world/"
-           data-title="纪念一下这个时刻，博客终于好了" data-url="https://eaminhu.github.io/2016/08/23/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/"
+           data-title="JavaSript模块规范 - AMD规范与CMD规范介绍" data-url="https://eaminhu.github.io/2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/">
       </div>
     
   </div>
@@ -568,7 +605,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概要："><span class="nav-number">1.</span> <span class="nav-text">概要：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AMD-与-RequireJS"><span class="nav-number">2.</span> <span class="nav-text">AMD 与 RequireJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMD-与-seaJS"><span class="nav-number">3.</span> <span class="nav-text">CMD 与 seaJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
         </section>
