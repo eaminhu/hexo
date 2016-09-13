@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="常见问题FAQ部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
+<meta name="description" content="部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
 会把CNAME文件删除，改放到source下即可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="部署hexo时遇到的问题">
 <meta property="og:url" content="https://eaminhu.github.io/2016/08/23/faq/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
-<meta property="og:description" content="常见问题FAQ部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
+<meta property="og:description" content="部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
 会把CNAME文件删除，改放到source下即可">
 <meta property="og:image" content="https://eaminhu.github.io/images/error.png">
-<meta property="og:updated_time" content="2016-09-01T12:50:15.692Z">
+<meta property="og:updated_time" content="2016-09-06T10:16:06.808Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署hexo时遇到的问题">
-<meta name="twitter:description" content="常见问题FAQ部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
+<meta name="twitter:description" content="部署hexo时，域名配置文件CNAME被删除之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
 会把CNAME文件删除，改放到source下即可">
 <meta name="twitter:image" content="https://eaminhu.github.io/images/error.png">
 
@@ -342,15 +342,16 @@
       
 
       
-        <h1 id="常见问题FAQ"><a href="#常见问题FAQ" class="headerlink" title="常见问题FAQ"></a>常见问题FAQ</h1><h2 id="部署hexo时，域名配置文件CNAME被删除"><a href="#部署hexo时，域名配置文件CNAME被删除" class="headerlink" title="部署hexo时，域名配置文件CNAME被删除"></a>部署hexo时，域名配置文件CNAME被删除</h2><pre><code>之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
+        <h6 id="部署hexo时，域名配置文件CNAME被删除"><a href="#部署hexo时，域名配置文件CNAME被删除" class="headerlink" title="部署hexo时，域名配置文件CNAME被删除"></a>部署hexo时，域名配置文件CNAME被删除</h6><pre><code>之前CNAME文件放在git根目录，发现每次执行 $ hexo d命令，
 会把CNAME文件删除，改放到source下即可
 </code></pre><a id="more"></a>
-<h2 id="使用-hexo-g-生成文件时报错"><a href="#使用-hexo-g-生成文件时报错" class="headerlink" title="使用$ hexo g 生成文件时报错"></a>使用$ hexo g 生成文件时报错</h2><p><img src="/images/error.png" alt=""><br>    原因是配置冒号后面没有空格，language: zh-Hans，这个问题在第一次弄的时候很容易出错！</p>
-<h2 id="修改主题不起作用，而且hexo-generate还报错"><a href="#修改主题不起作用，而且hexo-generate还报错" class="headerlink" title="修改主题不起作用，而且hexo generate还报错"></a>修改主题不起作用，而且hexo generate还报错</h2><pre><code>解决办法： 
+<h6 id="使用-hexo-g-生成文件时报错"><a href="#使用-hexo-g-生成文件时报错" class="headerlink" title="使用$ hexo g 生成文件时报错"></a>使用$ hexo g 生成文件时报错</h6><p><img src="/images/error.png" alt=""><br>    原因是配置冒号后面没有空格，language: zh-Hans，这个问题在第一次弄的时候很容易出错！</p>
+<h6 id="修改主题不起作用，而且hexo-generate还报错"><a href="#修改主题不起作用，而且hexo-generate还报错" class="headerlink" title="修改主题不起作用，而且hexo generate还报错"></a>修改主题不起作用，而且hexo generate还报错</h6><pre><code>解决办法： 
 需要到相应的主题文件夹下面进行修改，比如我的主题为：themes\jacman 则在根目录下找到该文件夹下，修改_config.yml文件，根目录下面也有个同样的名字，不注意，容易弄混，要主要修改的文件是否正确。
-</code></pre><h2 id="tags页面没有生成标签"><a href="#tags页面没有生成标签" class="headerlink" title="tags页面没有生成标签"></a>tags页面没有生成标签</h2><pre><code>在新建页面后，头部配置tags就能自动生成标签
+</code></pre><h6 id="tags页面没有生成标签"><a href="#tags页面没有生成标签" class="headerlink" title="tags页面没有生成标签"></a>tags页面没有生成标签</h6><pre><code>在新建页面后，头部配置tags就能自动生成标签
 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: hexo部署后，CNAME会被自动删除</div><div class="line">date: 2016-08-23 20:22:07</div><div class="line">tags: hexo </div><div class="line">categories: 编程</div></pre></td></tr></table></figure>
-
+<h6 id="修改主题不起作用，而且hexo-generate还报错-1"><a href="#修改主题不起作用，而且hexo-generate还报错-1" class="headerlink" title="修改主题不起作用，而且hexo generate还报错"></a>修改主题不起作用，而且hexo generate还报错</h6><p>解决办法：<br>需要到相应的主题文件夹下面进行修改，比如我的主题为：themes\jacman 则在根目录下找到该文件夹下，修改_config.yml文件，根目录下面也有个同样的名字，不注意，容易弄混，要主要修改的文件是否正确。</p>
+<h6 id="同时部署到github和coding配置"><a href="#同时部署到github和coding配置" class="headerlink" title="同时部署到github和coding配置"></a>同时部署到github和coding配置</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git    #部署类型, 本文使用Github</div><div class="line">  repo: </div><div class="line">     githug: https://github.com/eaminhu/hexo.git,master  #部署的仓库的SSH</div><div class="line">     coding: https://git.coding.net/eamin/blog.git,master</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -583,7 +584,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常见问题FAQ"><span class="nav-number">1.</span> <span class="nav-text">常见问题FAQ</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#部署hexo时，域名配置文件CNAME被删除"><span class="nav-number">1.1.</span> <span class="nav-text">部署hexo时，域名配置文件CNAME被删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-hexo-g-生成文件时报错"><span class="nav-number">1.2.</span> <span class="nav-text">使用$ hexo g 生成文件时报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改主题不起作用，而且hexo-generate还报错"><span class="nav-number">1.3.</span> <span class="nav-text">修改主题不起作用，而且hexo generate还报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tags页面没有生成标签"><span class="nav-number">1.4.</span> <span class="nav-text">tags页面没有生成标签</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#部署hexo时，域名配置文件CNAME被删除"><span class="nav-number">1.</span> <span class="nav-text">部署hexo时，域名配置文件CNAME被删除</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#使用-hexo-g-生成文件时报错"><span class="nav-number">2.</span> <span class="nav-text">使用$ hexo g 生成文件时报错</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改主题不起作用，而且hexo-generate还报错"><span class="nav-number">3.</span> <span class="nav-text">修改主题不起作用，而且hexo generate还报错</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#tags页面没有生成标签"><span class="nav-number">4.</span> <span class="nav-text">tags页面没有生成标签</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改主题不起作用，而且hexo-generate还报错-1"><span class="nav-number">5.</span> <span class="nav-text">修改主题不起作用，而且hexo generate还报错</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#同时部署到github和coding配置"><span class="nav-number">6.</span> <span class="nav-text">同时部署到github和coding配置</span></a></li></ol></div>
             
           </div>
         </section>
