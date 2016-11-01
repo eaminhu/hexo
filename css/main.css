@@ -190,6 +190,7 @@ body {
   line-height: 2;
   color: #555;
   background: #fff;
+/*background:url('http://ocetrc9t7.bkt.clouddn.com/bg.png');*/
 }
 @media (max-width: 767px) {
   body {
@@ -886,6 +887,7 @@ pre .javascript .function {
 }
 .header {
   background: #fff;
+  background: url("http://ocetrc9t7.bkt.clouddn.com/header_background.jpg") repeat center center;
 }
 .header-inner {
   position: relative;
@@ -1575,7 +1577,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f0c66b;
+  background: #ffffbe;
 }
 .links-of-blogroll {
   font-size: 13px;
