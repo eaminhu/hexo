@@ -66,7 +66,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="模块化," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -82,18 +82,15 @@
 
 
 
-<meta name="description" content="box-sizing属性可以为三个值之一：content-box（default），border-box，padding-box。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="css3 box-sizing属性">
-<meta property="og:url" content="https://eaminhu.github.io/2016/10/28/css3-box-sizing属性/index.html">
+<meta name="description" content="曾梦想仗剑走天涯">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eamin's Blog">
+<meta property="og:url" content="https://eaminhu.github.io/categories/博客/index.html">
 <meta property="og:site_name" content="Eamin's Blog">
-<meta property="og:description" content="box-sizing属性可以为三个值之一：content-box（default），border-box，padding-box。">
-<meta property="og:image" content="http://ocetrc9t7.bkt.clouddn.com/box-sizing.png">
-<meta property="og:updated_time" content="2016-10-28T06:10:13.454Z">
+<meta property="og:description" content="曾梦想仗剑走天涯">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css3 box-sizing属性">
-<meta name="twitter:description" content="box-sizing属性可以为三个值之一：content-box（default），border-box，padding-box。">
-<meta name="twitter:image" content="http://ocetrc9t7.bkt.clouddn.com/box-sizing.png">
+<meta name="twitter:title" content="Eamin's Blog">
+<meta name="twitter:description" content="曾梦想仗剑走天涯">
 
 
 
@@ -114,9 +111,9 @@
 
 
 
-  <link rel="canonical" href="https://eaminhu.github.io/2016/10/28/css3-box-sizing属性/"/>
+  <link rel="canonical" href="https://eaminhu.github.io/categories/博客/"/>
 
-  <title> css3 box-sizing属性 | Eamin's Blog </title>
+  <title> 分类: 博客 | Eamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -147,7 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,191 +242,75 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                css3 box-sizing属性
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-28T13:50:53+08:00" content="2016-10-28">
-              2016-10-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/programming/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/28/css3-box-sizing属性/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/28/css3-box-sizing属性/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-              &nbsp; | &nbsp;
-              <span class="page-pv"><i class="fa fa-file-o"></i>
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-              </span>
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>box-sizing属性可以为三个值之一：content-box（default），border-box，padding-box。<br> <a id="more"></a><br>content-box，border和padding不计算入width之内</p>
-<p>padding-box，padding计算入width内</p>
-<p>border-box，border和padding计算入width之内，其实就是怪异模式了~</p>
-<p>ie8+浏览器支持content-box和border-box；</p>
-<p>ff则支持全部三个值。</p>
-<p>使用时：</p>
-<p>-webkit-box-sizing: 100px; // for ios-safari, android</p>
-<p>-moz-box-sizing:100px; //for ff</p>
-<p>box-sizing:100px; //for other</p>
-<p>栗子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">    .content-box&#123;</div><div class="line">        box-sizing:content-box;</div><div class="line">        -moz-box-sizing:content-box;</div><div class="line">        width: 100px;</div><div class="line">        height: 100px;</div><div class="line">        padding: 20px;</div><div class="line">        border: 5px solid #E6A43F;</div><div class="line">        background: blue;</div><div class="line">    &#125;</div><div class="line">    .padding-box&#123;</div><div class="line">        box-sizing:padding-box;</div><div class="line">        -moz-box-sizing:padding-box;</div><div class="line">        width: 100px;</div><div class="line">        height: 100px;</div><div class="line">        padding: 20px;</div><div class="line">        border: 5px solid #186645;</div><div class="line">        background: red;                </div><div class="line">    &#125;</div><div class="line">    .border-box&#123;</div><div class="line">        box-sizing:border-box;</div><div class="line">        -moz-box-sizing:border-box;</div><div class="line">        width: 100px;</div><div class="line">        height: 100px;</div><div class="line">        padding: 20px;</div><div class="line">        border: 5px solid #3DA3EF;</div><div class="line">        background: yellow;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<p>效果如下：<br><img src="http://ocetrc9t7.bkt.clouddn.com/box-sizing.png"></p>
-
-      
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        博客
+        <small>分类</small>
+      </h2>
     </div>
 
-    <div>
+    
       
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-
-      
-    </div>
-
-    <div>
-      
+            <a class="post-title-link" href="/2016/11/10/hexo部署之后404错误/" itemprop="url">
+              
+                <span itemprop="name">hexo部署之后很多js报404错误</span>
+              
+            </a>
         
+      </h1>
 
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-11-10T11:12:21+08:00"
+              content="2016-11-10" >
+          11-10
+        </time>
+      </div>
 
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/模块化/" rel="tag">#模块化</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/09/05/JavaSript模块规范-AMD规范与CMD规范介绍/" rel="next" title="JavaSript模块规范 - AMD规范与CMD规范介绍">
-                <i class="fa fa-chevron-left"></i> JavaSript模块规范 - AMD规范与CMD规范介绍
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/10/hexo部署之后404错误/" rel="prev" title="hexo部署之后很多js报404错误">
-                hexo部署之后很多js报404错误 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
+    
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
 
-      
-    </div>
-  </div>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/08/23/faq/" itemprop="url">
+              
+                <span itemprop="name">部署hexo时遇到的问题</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-08-23T20:22:07+08:00"
+              content="2016-08-23" >
+          08-23
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+    
+  </section>
+
+  
+
 
 
           </div>
@@ -437,14 +318,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/10/28/css3-box-sizing属性/"
-           data-title="css3 box-sizing属性" data-url="https://eaminhu.github.io/2016/10/28/css3-box-sizing属性/">
-      </div>
-    
-  </div>
-
 
 
 		
@@ -468,17 +341,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/admin.jpg"
@@ -579,17 +443,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">此文章未包含目录</p>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -702,10 +555,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 
