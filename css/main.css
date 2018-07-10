@@ -524,6 +524,8 @@ pre code {
   border: none;
   margin: 0;
   padding: 1px;
+  background-color: #000;
+  color: #fff;
 }
 .highlight table {
   margin: 0;
@@ -1577,7 +1579,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5effff;
+  background: #d798a4;
 }
 .links-of-blogroll {
   font-size: 13px;
